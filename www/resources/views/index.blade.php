@@ -72,12 +72,12 @@
 <section class="banner-part">
     <div class="banner-bg">
         <div class="container">
-            <img class="circle-shape" src="img/circle-shape.png" alt="circle-shape">
-            <img class="star-shape" src="img/star-shape.png" alt="star-shape">
+            <img class="circle-shape" src="{{ asset('img/circle-shape.png') }}" alt="circle-shape">
+            <img class="star-shape" src="{{ asset('img/star-shape.png') }}" alt="star-shape">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <div class="banner-img">
-                        <img src="img/banner-hero.png" alt="banner-hero">
+                        <img src="{{ asset('img/banner-hero.png') }}" alt="banner-hero">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
@@ -90,8 +90,8 @@
                             <li><a class="icon icon-inline" href="#"><i class="fab fa-dribbble"></i></a></li>
                         </ul>
                         <div class="banner-text">
-                            <span>Welcome dear!</span>
-                            <h1>In my own hand-crafted frontend development world.</h1>
+                            <span>Maxime Sieczkowski</span>
+                            <h1>{{ __('Développeur Web Full Stack') }}</h1>
                             <p>Helping design your business and personal website build with your demand by html and
                                 wordpress. Click the demo work button, you can see my previous project.</p>
                         </div>
@@ -124,8 +124,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-heading">
-                    <p>my <span>resume</span></p>
-                    <h2>Some basic information about myself</h2>
+                    <p>{{ __('mon') }} <span>{{ __('parcours') }}</span></p>
+                    <h2>{{ __('Quelques informations à propos de moi') }}</h2>
                 </div>
             </div>
         </div>
@@ -135,25 +135,19 @@
                     <li>
                         <button class="cate-btn active" onclick="filter('about-part')">
                             <i class="fas fa-user"></i>
-                            <span>about me</span>
+                            <span>{{ __('à propos') }}</span>
                         </button>
                     </li>
                     <li>
                         <button class="cate-btn" onclick="filter('exper-part')">
                             <i class="fas fa-user-tie"></i>
-                            <span>experience</span>
+                            <span>{{ __('expérience') }}</span>
                         </button>
                     </li>
                     <li>
                         <button class="cate-btn" onclick="filter('edu-part')">
                             <i class="fas fa-user-graduate"></i>
-                            <span>education</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="cate-btn" onclick="filter('refer-part')">
-                            <i class="fas fa-users"></i>
-                            <span>reference</span>
+                            <span>{{ __('diplômes') }}</span>
                         </button>
                     </li>
                 </ul>
@@ -174,53 +168,53 @@
         <div class="row">
             <div class="col-lg-7">
                 <div class="about-summery">
-                    <h3>I'm Mahmudul hasan (miron)</h3>
+                    <h3>{{ __('Je suis') }} Maxime Sieczkowski</h3>
                     <p>I’m with broad technical skill-set, very strong attention to detail, and 3 years of experience in front-end web development. Able to multitask and juggle multiple pressing projects simultaneously. On top of the latest trends and technologies. Ability to improvise, troubleshoot, take ownership, and most importantly learn new skills on the job.</p>
                 </div>
                 <div class="about-list">
                     <ul>
                         <li>
-                            <h6>Birthday:</h6>
-                            <p>02 Februray 1995</p>
+                            <h6>{{ __('Anniversaire') }}:</h6>
+                            <p>{{ __('8 Mai 1997') }}</p>
                         </li>
                         <li>
-                            <h6>Lives in:</h6>
-                            <p>Narayanganj, Bangladesh</p>
-                        </li>
-                        <li>
-                            <h6>Website:</h6>
-                            <p>www.mironmahmud.com</p>
+                            <h6>{{ __('Ville') }}:</h6>
+                            <p>Yssingeaux (43), France</p>
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            <h6>Phone:</h6>
-                            <p>(+880) 1838288389</p>
+                            <h6>{{ __('Téléphone') }}:</h6>
+                            <p>
+                                <a href="tel:+33612836095">
+                                    (+33) 06 12 83 60 95
+                                </a>
+                            </p>
                         </li>
                         <li>
-                            <h6>Skype:</h6>
-                            <p>live:mironhasan018</p>
-                        </li>
-                        <li>
-                            <h6>Linkedin:</h6>
-                            <p>/mironcoder</p>
+                            <h6>{{ __('Site') }}:</h6>
+                            <p>
+                                <a target="_blank" href="{{ url('/') }}">
+                                    www.m-scz.fr
+                                </a>
+                            </p>
                         </li>
                     </ul>
                 </div>
                 <div class="about-btn duel-btn">
                     <a class="btn btn-inline" href="#" download>
                         <i class="fas fa-download"></i>
-                        <span>Download CV</span>
+                        <span>{{ __('téléchargez mon CV') }}</span>
                     </a>
                     <a class="btn btn-inline" href="#">
                         <i class="fas fa-headset"></i>
-                        <span>contact me</span>
+                        <span>{{ __('contactez moi') }}</span>
                     </a>
                 </div>
             </div>
             <div class="col-lg-5">
                 <div class="about-img">
-                    <img src="img/about.png" alt="about">
+                    <img src="{{ asset('img/about.png') }}" alt="about">
                 </div>
             </div>
         </div>
@@ -240,14 +234,18 @@
             <div class="col-md-6 col-lg-6">
                 <div class="resume-card">
                     <span class="flaticon-medal"></span>
-                    <h4>Feb 2016 - Dec 2017</h4>
+                    <h4>{{ __('Juin') }} 2020 - {{ __('Aujourd\'hui') }}</h4>
                     <ul>
                         <li>
                             <i class="flaticon-deadline"></i>
                         </li>
                         <li>
-                            <h5>Frontend Developer</h5>
-                            <h6>Creative-It Institute</h6>
+                            <h5>{{ __('Développeur Web Full Stack') }}</h5>
+                            <h6>
+                                <a target="_blank" href="https://www.s2asolution.ch">
+                                    S2A Solution
+                                </a>
+                            </h6>
                         </li>
                     </ul>
                 </div>
@@ -255,14 +253,18 @@
             <div class="col-md-6 col-lg-6">
                 <div class="resume-card">
                     <span class="flaticon-medal"></span>
-                    <h4>Feb 2017 - Dec 2018</h4>
+                    <h4>{{ __('Août') }} 2019 - {{ __('Mai') }} 2020</h4>
                     <ul>
                         <li>
                             <i class="flaticon-deadline"></i>
                         </li>
                         <li>
-                            <h5>Frontend Developer</h5>
-                            <h6>Ingenious-hub Team</h6>
+                            <h5>{{ __('Co-Fondateur boutique en ligne') }}</h5>
+                            <h6>
+                                <a target="_blank" href="https://www.dreamequestrian.com">
+                                    Dream Equestrian
+                                </a>
+                            </h6>
                         </li>
                     </ul>
                 </div>
@@ -270,14 +272,18 @@
             <div class="col-md-6 col-lg-6">
                 <div class="resume-card">
                     <span class="flaticon-medal"></span>
-                    <h4>Feb 2018 - Dec 2019</h4>
+                    <h4>{{ __('Octobre') }} 2018 - {{ __('Mai') }} 2019</h4>
                     <ul>
                         <li>
                             <i class="flaticon-deadline"></i>
                         </li>
                         <li>
-                            <h5>Frontend Developer</h5>
-                            <h6>Icon-Infotech Limited</h6>
+                            <h5>{{ __('Développeur Web Full Stack Junior') }}</h5>
+                            <h6>
+                                <a target="_blank" href="https://www.nobitaweb.com">
+                                    Novitàweb
+                                </a>
+                            </h6>
                         </li>
                     </ul>
                 </div>
@@ -285,14 +291,18 @@
             <div class="col-md-6 col-lg-6">
                 <div class="resume-card">
                     <span class="flaticon-medal"></span>
-                    <h4>Feb 2019 - Dec 2020</h4>
+                    <h4>{{ __('Octobre') }} 2017 - {{ __('Septembre') }} 2018</h4>
                     <ul>
                         <li>
                             <i class="flaticon-deadline"></i>
                         </li>
                         <li>
-                            <h5>Frontend Developer</h5>
-                            <h6>Xpeedstudio</h6>
+                            <h5>{{ __('Développeur Web Alternant') }}</h5>
+                            <h6>
+                                <a target="_blank" href="https://www.nobitaweb.com">
+                                    Novitàweb
+                                </a>
+                            </h6>
                         </li>
                     </ul>
                 </div>
@@ -314,14 +324,18 @@
             <div class="col-md-6 col-lg-6">
                 <div class="resume-card">
                     <span class="flaticon-graduation-cap"></span>
-                    <h4>apr 2017 - Running</h4>
+                    <h4>{{ __('Septembre') }} 2017 - {{ __('Juin') }} 2018</h4>
                     <ul>
                         <li>
                             <i class="flaticon-deadline"></i>
                         </li>
                         <li>
-                            <h5>B.S.S Honourse at Economics</h5>
-                            <h6>Government Tolaram college, Narayanganj</h6>
+                            <h5>
+                                License Professionneelle METINET
+                            </h5>
+                            <h6>
+                                IUT Lyon 1, Bourg-En-Bresse (01)
+                            </h6>
                         </li>
                     </ul>
                 </div>
@@ -329,14 +343,16 @@
             <div class="col-md-6 col-lg-6">
                 <div class="resume-card">
                     <span class="flaticon-graduation-cap"></span>
-                    <h4>jan 2015 - feb 2017</h4>
+                    <h4>{{ __('Septembre') }} 2015 - {{ __('Juin') }} 2017</h4>
                     <ul>
                         <li>
                             <i class="flaticon-deadline"></i>
                         </li>
                         <li>
-                            <h5>Alim / H.S.C - GPA : 4.57</h5>
-                            <h6>Government Madrasha-E Alia, Dhaka</h6>
+                            <h5>BTS SIO Option SLAM</h5>
+                            <h6>
+                                Lycée La Chartreuse Paradis, Le Puy en Velay (43)    
+                            </h6>
                         </li>
                     </ul>
                 </div>
@@ -344,29 +360,18 @@
             <div class="col-md-6 col-lg-6">
                 <div class="resume-card">
                     <span class="flaticon-graduation-cap"></span>
-                    <h4>jan 2013 - dec 2015</h4>
+                    <h4>{{ __('Septembre') }} 2013 - {{ __('Juin') }} 2015</h4>
                     <ul>
                         <li>
                             <i class="flaticon-deadline"></i>
                         </li>
                         <li>
-                            <h5>Dakhil / S.S.C - GPA : 450</h5>
-                            <h6>Islami Mission Kamil Madrasha</h6>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6">
-                <div class="resume-card">
-                    <span class="flaticon-graduation-cap"></span>
-                    <h4>jan 2011 - dec 2013</h4>
-                    <ul>
-                        <li>
-                            <i class="flaticon-deadline"></i>
-                        </li>
-                        <li>
-                            <h5>J.D.C / J.S.C - GPA : 467</h5>
-                            <h6>Badarpur Senior Alim Madrasha</h6>
+                            <h5>
+                                Baccalauréat Scientifique Option SVT
+                            </h5>
+                            <h6>
+                                Lycée Emmanuel Chabrier, Yssingeaux (43)
+                            </h6>
                         </li>
                     </ul>
                 </div>
@@ -377,51 +382,6 @@
 <!--=====================================
             EDUCATION PART END
 =======================================-->
-
-
-<!--=====================================
-            REFERENCE PART START
-=======================================-->
-<section class="section refer-part cate-active">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="refer-card">
-                    <div class="refer-img">
-                        <img src="img/refer-1.jpg" alt="refer-1">
-                    </div>
-                    <div class="refer-content">
-                        <h4>Maccelam Bond</h4>
-                        <p>Sr. Ux / Ui Designer <span>at Creative It Institute</span></p>
-                        <ul class="refer-contact">
-                            <li><a class="icon icon-inline" href="#"><i class="fas fa-phone-alt"></i></a></li>
-                            <li><a class="icon icon-inline" href="#"><i class="fas fa-envelope"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="refer-card">
-                    <div class="refer-img">
-                        <img src="img/refer-2.jpg" alt="refer-2">
-                    </div>
-                    <div class="refer-content">
-                        <h4>Lady Watsona</h4>
-                        <p>Deputy Manager <span>at Icon Infotech LTD</span></p>
-                        <ul class="refer-contact">
-                            <li><a class="icon icon-inline" href="#"><i class="fas fa-phone-alt"></i></a></li>
-                            <li><a class="icon icon-inline" href="#"><i class="fas fa-envelope"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--=====================================
-            REFERENCE PART END
-=======================================-->
-
 
 <!--=====================================
             SERVICE PART START

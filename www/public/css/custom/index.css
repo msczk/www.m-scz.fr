@@ -220,7 +220,8 @@
 
 .resume-card:hover ul li i,
 .resume-card:hover ul li h5,
-.resume-card:hover ul li h6 {
+.resume-card:hover ul li h6,
+.resume-card:hover ul li h6 a {
   color: var(--white);
 }
 
@@ -286,6 +287,16 @@
   color: var(--primary);
 }
 
+.resume-card ul li h6 a{
+  color: var(--primary);
+}
+
+
+.resume-card ul li h6 a:focus,
+.resume-card ul li h6 a:active,
+.resume-card ul li h6 a:hover{
+  text-decoration: underline;
+}
 /*=====================================
           REFERENCE PART STYLE
 ======================================*/
@@ -1636,6 +1647,16 @@
 
 .about-list li p {
   font-weight: 500;
+}
+
+.about-list li p a{
+  color: var(--text);
+}
+
+.about-list li p a:hover,
+.about-list li p a:active,
+.about-list li p a:focus{
+  text-decoration: underline;
 }
 
 .about-img img {
