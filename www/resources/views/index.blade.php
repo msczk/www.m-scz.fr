@@ -125,7 +125,7 @@
             <div class="col-lg-12">
                 <div class="section-heading">
                     <p>{{ __('mon') }} <span>{{ __('parcours') }}</span></p>
-                    <h2>{{ __('Quelques informations à propos de moi') }}</h2>
+                    <h2>{{ __('Pour en savoir un peu plus sur moi') }}</h2>
                 </div>
             </div>
         </div>
@@ -168,7 +168,7 @@
         <div class="row">
             <div class="col-lg-7">
                 <div class="about-summery">
-                    <h3>{{ __('Je suis') }} Maxime Sieczkowski</h3>
+                    <h3>{{ __('Je suis') }} <span>Maxime Sieczkowski</span></h3>
                     <p>I’m with broad technical skill-set, very strong attention to detail, and 3 years of experience in front-end web development. Able to multitask and juggle multiple pressing projects simultaneously. On top of the latest trends and technologies. Ability to improvise, troubleshoot, take ownership, and most importantly learn new skills on the job.</p>
                 </div>
                 <div class="about-list">
@@ -391,7 +391,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-heading">
-                    <p>my <span>services</span></p>
+                    <p>{{ __('mes') }} <span>{{ __('services') }}</span></p>
                     <h2>I'm very passionate under about this services</h2>
                 </div>
             </div>
@@ -469,166 +469,6 @@
 =======================================-->
 
 
-<!--=====================================
-            CODING PART START
-=======================================-->
-<section class="section coding-part">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-heading">
-                    <p>coding <span>structure</span></p>
-                    <h2>How do I organize of my coding structure</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="coding-content">
-                    <h3>Build your SAAS landing page using the <span>intelligent BEM interface</span></h3>
-                    <p>Blocks, Elements and Modifiers. A smart HTML/CSS structure that can easely be reused. Layout driven by the purpose of modularity.</p>
-                </div>
-                <ul class="coding-list">
-                    <li>
-                        <span class="coding-round"></span>
-                        <p>Simple and Smart HTML code structure</p>
-                    </li>
-                    <li>
-                        <span class="coding-round"></span>
-                        <p>Works reintegrated in any part of the layout</p>
-                    </li>
-                    <li>
-                        <span class="coding-round"></span>
-                        <p>Reuse the elements from one design to another</p>
-                    </li>
-                    <li>
-                        <span class="coding-round"></span>
-                        <p>Looks good on all devices Responsive code</p>
-                    </li>
-                    <li>
-                        <span class="coding-round"></span>
-                        <p>Meaningful comment in each section</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-6">
-                <div class="coding-img">
-                    <img src="img/coding.jpg" alt="coding">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--=====================================
-            CODING PART END
-=======================================-->
-
-
-<!--=====================================
-            PORTFOLIO PART START
-=======================================-->
-<section class="section port-part">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-heading">
-                    <p>my <span>portfolio</span></p>
-                    <h2>Take a look some of my featured projects</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="port-slider">
-                    <div class="port-card">
-                        <div class="port-img">
-                            <img src="img/port-1.jpg" alt="port-1">
-                        </div>
-                        <div class="port-oly">
-                            <div class="port-btn">
-                                <a class="btn btn-inline" href="#">live preview</a>
-                                <a class="btn btn-inline" href="#">view details</a>
-                            </div>
-                            <div class="port-text">
-                                <h6>Corporate website</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="port-card">
-                        <div class="port-img">
-                            <img src="img/port-2.jpg" alt="port-2">
-                        </div>
-                        <div class="port-oly">
-                            <div class="port-btn">
-                                <a class="btn btn-inline" href="#">live preview</a>
-                                <a class="btn btn-inline" href="#">view details</a>
-                            </div>
-                            <div class="port-text">
-                                <h6>App landing page</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="port-card">
-                        <div class="port-img">
-                            <img src="img/port-3.jpg" alt="port-3">
-                        </div>
-                        <div class="port-oly">
-                            <div class="port-btn">
-                                <a class="btn btn-inline" href="#">live preview</a>
-                                <a class="btn btn-inline" href="#">view details</a>
-                            </div>
-                            <div class="port-text">
-                                <h6>Job marketplace</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="port-card">
-                        <div class="port-img">
-                            <img src="img/port-4.jpg" alt="port-4">
-                        </div>
-                        <div class="port-oly">
-                            <div class="port-btn">
-                                <a class="btn btn-inline" href="#">live preview</a>
-                                <a class="btn btn-inline" href="#">view details</a>
-                            </div>
-                            <div class="port-text">
-                                <h6>creative agency</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="port-card">
-                        <div class="port-img">
-                            <img src="img/port-5.jpg" alt="port-5">
-                        </div>
-                        <div class="port-oly">
-                            <div class="port-btn">
-                                <a class="btn btn-inline" href="#">live preview</a>
-                                <a class="btn btn-inline" href="#">view details</a>
-                            </div>
-                            <div class="port-text">
-                                <h6>FM radio station</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="port-show-btn">
-                    <a class="btn btn-inline" href="#">
-                        <i class="far fa-eye"></i>
-                        <span>show more</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--=====================================
-            PORTFOLIO PART END
-=======================================-->
-
 
 <!--=====================================
             SKILLS PART START
@@ -638,7 +478,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-heading">
-                    <p>my <span>skills</span></p>
+                    <p>{{ __('mes') }} <span>{{ __('compétences') }}</span></p>
                     <h2>Expert in this technical web software</h2>
                 </div>
             </div>
@@ -777,21 +617,19 @@
 =======================================-->
 <section class="discuss-part">
     <div class="container">
-        <div class="discuss-oly">
-            <div class="row discuss-bg">
-                <div class="col-md-7 col-lg-8">
-                    <div class="discuss-content">
-                        <h3>Let’s discuss your idea</h3>
-                        <p>Have a thought about your future website? I am always here.</p>
-                    </div>
+        <div class="row discuss-bg">
+            <div class="col-md-7 col-lg-8">
+                <div class="discuss-content">
+                    <h3>Let’s discuss your idea</h3>
+                    <p>Have a thought about your future website? I am always here.</p>
                 </div>
-                <div class="col-md-5 col-lg-4">
-                    <div class="discuss-btn">
-                        <a class="btn btn-inline" href="#">
-                            <i class="fas fa-paper-plane"></i>
-                            <span>Get in Touch</span>
-                        </a>
-                    </div>
+            </div>
+            <div class="col-md-5 col-lg-4">
+                <div class="discuss-btn">
+                    <a class="btn btn-inline" href="#">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Get in Touch</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -800,228 +638,6 @@
 <!--=====================================
             DISCUSS PART END
 =======================================-->
-
-
-<!--=====================================
-            COUNTER PART START
-=======================================-->
-<section class="counter-part">
-    <div class="counter-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-lg-4">
-                    <div class="counter-card count-1">
-                        <i class="flaticon-project-management"></i>
-                        <div class="counter-info">
-                            <h3><span class="counter-number">122</span>+</h3>
-                            <p>Project completed</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4">
-                    <div class="counter-card count-2">
-                        <i class="flaticon-handshake"></i>
-                        <div class="counter-info">
-                            <h3><span class="counter-number">108</span>+</h3>
-                            <p>Satisfied Clients</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4">
-                    <div class="counter-card count-3">
-                        <i class="flaticon-rating"></i>
-                        <div class="counter-info">
-                            <h3><span class="counter-number">98</span>%</h3>
-                            <p>Possitive Feedback</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--=====================================
-            COUNTER PART END
-=======================================-->
-
-
-<!--=====================================
-            PRICING PART START
-=======================================-->
-<section class="section pricing-part">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-heading">
-                    <p>pricing <span>plan</span></p>
-                    <h2>Pricing plan will be change by discussion</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-lg-4">
-                <div class="pricing-card">
-                    <div class="pricing-money">
-                        <h3>basic</h3>
-                        <h4>$30.00</h4>
-                        <p>per project</p>
-                    </div>
-                    <ul class="pricing-list">
-                        <li>One landing page</li>
-                        <li>With responsive</li>
-                        <li>modern design</li>
-                        <li>Three rivision</li>
-                        <li>four section</li>
-                    </ul>
-                    <div class="pricing-btn">
-                        <a class="btn btn-inline" href="#">
-                            <i class="fas fa-paper-plane"></i>
-                            <span>Purchase plan</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="pricing-card pricing-recom">
-                    <div class="pricing-money">
-                        <h3>standard</h3>
-                        <h4>$60.00</h4>
-                        <p>per project</p>
-                    </div>
-                    <ul class="pricing-list">
-                        <li>One landing page</li>
-                        <li>With responsive</li>
-                        <li>modern design</li>
-                        <li>five rivision</li>
-                        <li>six section</li>
-                    </ul>
-                    <div class="pricing-btn">
-                        <a class="btn btn-inline" href="#">
-                            <i class="fas fa-paper-plane"></i>
-                            <span>Purchase plan</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="pricing-card">
-                    <div class="pricing-money">
-                        <h3>premium</h3>
-                        <h4>$99.00</h4>
-                        <p>per project</p>
-                    </div>
-                    <ul class="pricing-list">
-                        <li>One landing page</li>
-                        <li>With responsive</li>
-                        <li>modern design</li>
-                        <li>eight rivision</li>
-                        <li>nine section</li>
-                    </ul>
-                    <div class="pricing-btn">
-                        <a class="btn btn-inline" href="#">
-                            <i class="fas fa-paper-plane"></i>
-                            <span>Purchase plan</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--=====================================
-            PRICING PART END
-=======================================-->
-
-
-<!--=====================================
-            FAQ PART START
-=======================================-->
-<section class="section faq-part">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-heading">
-                    <p>faq <span>question</span></p>
-                    <h2>Find your question before we work together</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-lg-6">
-                <div class="faq-parent">
-                    <div class="faq-child">
-                        <div class="faq-que">
-                            <button>What needs to be done to place your order ?</button>
-                        </div>
-                        <div class="faq-ans">
-                            <p>psd / png / jpg / pdf / any source file or reference link must be provided. If
-                                nothing else, tell me your needs, likes, or thoughts.</p>
-                        </div>
-                    </div>
-                    <div class="faq-child">
-                        <div class="faq-que">
-                            <button>I don't have PSD and JPG but I have Idea...</button>
-                        </div>
-                        <div class="faq-ans">
-                            <p>No problem, you will give me your idea and requirements of your website, in this case
-                                i'll help you to generate idea.</p>
-                        </div>
-                    </div>
-                    <div class="faq-child">
-                        <div class="faq-que">
-                            <button>What If I provide JPG file instant of PSD file ?</button>
-                        </div>
-                        <div class="faq-ans">
-                            <p>In this case the photos will be used in the website will not have good quality. But I
-                                can provide you with similar photos with limited cost.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6">
-                <div class="faq-parent">
-                    <div class="faq-child">
-                        <div class="faq-que">
-                            <button>How long will I take to handover your project ?</button>
-                        </div>
-                        <div class="faq-ans">
-                            <p>It depends on the complexity of your project but I've team so, I'm capable to finish your project faster than anyone else.</p>
-                        </div>
-                    </div>
-                    <div class="faq-child">
-                        <div class="faq-que">
-                            <button>If i don't get my project according to my requirement ?
-                            </button>
-                        </div>
-                        <div class="faq-ans">
-                            <p>Well It never happened. In this case i'll redesign for you if the design doesn't full fill your requirement.</p>
-                        </div>
-                    </div>
-                    <div class="faq-child">
-                        <div class="faq-que">
-                            <button>Do you use any automated Software conversion ?</button>
-                        </div>
-                        <div class="faq-ans">
-                            <p>Never! All codes are hand-typed code with well commented and W3C Validated.</p>
-                        </div>
-                    </div>
-                    <div class="faq-child">
-                        <div class="faq-que">
-                            <button>Will I get pixel perfect design ?</button>
-                        </div>
-                        <div class="faq-ans">
-                            <p>Yes, You will get a pixel perfect and fresh design.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--=====================================
-            FAQ PART END
-=======================================-->
-
 
 <!--=====================================
             TESTIMONIAL PART START
@@ -1263,8 +879,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-heading">
-                    <p>contact <span>me</span></p>
-                    <h2>I'm always open to discussion time spand</h2>
+                    <p>{{ __('contactez') }} <span>{{ __('moi') }}</span></p>
+                    <h2>{{ __('Discutons de votre futur projet') }}</h2>
                 </div>
             </div>
         </div>
@@ -1275,8 +891,8 @@
                         <i class="flaticon-telephone"></i>
                     </div>
                     <div class="address-text">
-                        <h4>phone</h4>
-                        <p>(+880) 1838288389 <span>(+880) 1941101915</span></p>
+                        <h4>{{ __('Téléphone') }}</h4>
+                        <p>(+33) 06 12 83 60 95</p>
                     </div>
                 </div>
             </div>
@@ -1287,7 +903,7 @@
                     </div>
                     <div class="address-text">
                         <h4>email</h4>
-                        <p>mironcoder@gmail.com <span>mironbonny1994@gmail.com</span></p>
+                        <p>maxime43200@gmail.com</p>
                     </div>
                 </div>
             </div>
@@ -1297,19 +913,19 @@
                         <i class="flaticon-pin"></i>
                     </div>
                     <div class="address-text">
-                        <h4>location</h4>
-                        <p>1420 East Delpara <span>Narayanganj, Bangladesh</span></p>
+                        <h4>{{ __('Ville') }}</h4>
+                        <p>Yssingeaux (43), France</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-lg-7">
+            <div class="col-md-6 col-lg-8">
                 <form>
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Name">
+                                <input type="text" class="form-control" placeholder="{{ __('Nom') }}">
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -1319,7 +935,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Subject">
+                                <input type="text" class="form-control" placeholder="{{ __('Objet') }}">
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -1336,16 +952,16 @@
                             <div class="form-btn">
                                 <button class="btn btn-inline" type="submit">
                                     <i class="fas fa-paper-plane"></i>
-                                    <span>send message</span>
+                                    <span>{{ __('Envoyer') }}</span>
                                 </button>
                             </div>
                         </div>
                     </div>
                 </form>
             </div>
-            <div class="col-md-6 col-lg-5">
+            <div class="col-md-6 col-lg-4">
                 <div class="contact-img">
-                    <img src="img/contact.png" alt="contact">
+                    <img src="{{ asset('img/contact.png') }}" alt="contact">
                 </div>
             </div>
         </div>
@@ -1364,27 +980,19 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="footer-logo">
-                    <a href="#"><img src="img/logo.png" alt="footer-logo"></a>
+                    <a href="#">
+                        <img src="{{ asset('img/logo.png') }}" alt="footer-logo">
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <ul class="footer-icon">
-                    <li><a class="icon icon-inline" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a class="icon icon-inline" href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a class="icon icon-inline" href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a class="icon icon-inline" href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a class="icon icon-inline" href="#"><i class="fab fa-dribbble"></i></a></li>
-                </ul>
-            </div>
-        </div>
+
         <div class="row">
             <div class="col-lg-12">
                 <ul class="footer-text">
-                    <li><h6>&copy; Copyright - <span>2020</span></h6></li>
-                    <li><h6>All rights reserved by - <a target="_blank" href="https://themeforest.net/user/mironcoder">mironcoder</a></h6></li>
-                    <li><h6>Developed by - <a target="_blank" href="https://mironmahmud.com/">mironmahmud</a></h6></li>
+                    <li><h6>&copy; Copyright - <span>{{ now()->year }}</span></h6></li>
+                    <li><h6>{{ __('Tous droits réservés') }}</h6></li>
+                    <li><h6>{{ __('Fait avec ❤ par') }} - <a target="_blank" href="{{ url('/') }}">Maxime Sieczkowski</a></h6></li>
                 </ul>
             </div>
         </div>
