@@ -402,7 +402,6 @@ h6 {
 
 @media (max-width: 450px) {
   .duel-btn {
-    width: 210px;
     margin: 0 auto;
     text-align: center;
   }

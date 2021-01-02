@@ -1911,18 +1911,13 @@
 ======================================*/
 .discuss-part {
   background: var(--primary);
-  border-radius: 10px;
-  padding: 0px 15px;
   -webkit-box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.15);
  /* background: url(../../img/discuss-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;*/
-}
-
-.discuss-oly {
-  
+  margin: 120px 0px 0px;
 }
 
 .discuss-bg {

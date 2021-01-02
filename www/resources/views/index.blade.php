@@ -1,74 +1,51 @@
 @extends('layout.layout')
 
 @section('content')
-<!--=====================================
-        BACK2TOP BUTTON PART START
-=======================================-->
+
 <a class="back2top-btn" href="#">
     <i class="fas fa-long-arrow-alt-up"></i>
 </a>
-<!--=====================================
-        BACK2TOP BUTTON PART END
-=======================================-->
 
-
-<!--=====================================
-            NAVBAR PART START
-=======================================-->
 <nav class="navbar-part">
     <div class="container">
         <div class="navbar-content">
-            <a class="navbar-logo" href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <a class="navbar-logo" href="#">
+                <img src="{{asset('img/logo.png') }}" alt="logo">
+            </a>
             <button class="navbar-toggle" type="button"><i class="fas fa-bars"></i></button>
 
             <div class="navbar-slide">
                 <a class="navbar-cross" href="#"><i class="fas fa-times"></i></a>
 
                 <ul class="navbar-list">
-                    <li class="navbar-item active"><a class="navbar-link" href="#">Home</a></li>
-                    <li class="navbar-item"><a class="navbar-link" href="service.html">services</a></li>
-                    <li class="navbar-item"><a class="navbar-link" href="resume.html">resume</a></li>
-                    <li class="navbar-item navbar-dropdown">
-                        <a class="navbar-link dropdown-indicator" href="#">
-                            <span>portfolio</span>
-                            <i class="fas fa-plus"></i>
-                        </a>
-                        <ul class="dropdown-list">
-                            <li><a class="dropdown-link" href="portfolio-list.html">Portfolio List</a></li>
-                            <li><a class="dropdown-link" href="portfolio-details.html">Portfolio Details</a></li>
-                        </ul>
+                    <li class="navbar-item active">
+                        <a class="navbar-link" href="#">{{ __('Accueil') }}</a>
                     </li>
-                    <li class="navbar-item navbar-dropdown">
-                        <a class="navbar-link dropdown-indicator" href="#">
-                            <span>blogs</span>
-                            <i class="fas fa-plus"></i>
-                        </a>
-                        <ul class="dropdown-list">
-                            <li><a class="dropdown-link" href="blog-list.html">Blog list</a></li>
-                            <li><a class="dropdown-link" href="blog-details.html">blog details</a></li>
-                        </ul>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#">{{ __('Parcours') }}</a>
                     </li>
-                    <li class="navbar-item"><a class="navbar-link" href="contact.html">contact</a></li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#">{{ __('Services') }}</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#">{{ __('Compétences') }}</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#">{{ __('Témoignages') }}</a>
+                    </li>
                 </ul>
 
                 <div class="navbar-btn">
                     <a class="btn btn-inline" href="#">
-                        <i class="fas fa-code"></i>
-                        <span>need to talk?</span>
+                        <i class="fas fa-paper-plane"></i>
+                        <span>{{ __('me contacter') }}</span>
                     </a>
                 </div>
             </div>
         </div>
     </div>
 </nav>
-<!--=====================================
-            NAVBAR PART END
-=======================================-->
 
-
-<!--=====================================
-            BANNER PART START
-=======================================-->
 <section class="banner-part">
     <div class="banner-bg">
         <div class="container">
@@ -82,13 +59,6 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="banner-content">
-                        <ul class="banner-icon">
-                            <li><a class="icon icon-inline" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="icon icon-inline" href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="icon icon-inline" href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a class="icon icon-inline" href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="icon icon-inline" href="#"><i class="fab fa-dribbble"></i></a></li>
-                        </ul>
                         <div class="banner-text">
                             <span>Maxime Sieczkowski</span>
                             <h1>{{ __('Développeur Web Full Stack') }}</h1>
@@ -98,11 +68,11 @@
                         <div class="banner-btn duel-btn">
                             <a class="btn btn-inline" href="#">
                                 <i class="fas fa-arrows-alt"></i>
-                                <span>know more</span>
+                                <span>{{ __('En savoir plus') }}</span>
                             </a>
-                            <a class="btn btn-inline" href="portfolio.html">
-                                <i class="fas fa-boxes"></i>
-                                <span>demo work</span>
+                            <a class="btn btn-inline" href="#">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>{{ __('Me contacter') }}</span>
                             </a>
                         </div>
                     </div>
@@ -111,14 +81,7 @@
         </div>
     </div>
 </section>
-<!--=====================================
-            BANNER PART END
-=======================================-->
 
-
-<!--=====================================
-            RESUME PART START
-=======================================-->
 <section class="section resume-part">
     <div class="container">
         <div class="row">
@@ -155,14 +118,7 @@
         </div>
     </div>
 </section>
-<!--=====================================
-            RESUME PART END
-=======================================-->
 
-
-<!--=====================================
-            ABOUT PART START
-=======================================-->
 <section class="section about-part cate-active">
     <div class="container">
         <div class="row">
@@ -204,10 +160,10 @@
                 <div class="about-btn duel-btn">
                     <a class="btn btn-inline" href="#" download>
                         <i class="fas fa-download"></i>
-                        <span>{{ __('téléchargez mon CV') }}</span>
+                        <span>{{ __('téléchargez CV') }}</span>
                     </a>
                     <a class="btn btn-inline" href="#">
-                        <i class="fas fa-headset"></i>
+                        <i class="fas fa-paper-plane"></i>
                         <span>{{ __('contactez moi') }}</span>
                     </a>
                 </div>
@@ -220,14 +176,7 @@
         </div>
     </div>
 </section>
-<!--=====================================
-            ABOUT PART END
-=======================================-->
 
-
-<!--=====================================
-            EXPERIENCE PART START
-=======================================-->
 <section class="section exper-part cate-active">
     <div class="container">
         <div class="row">
@@ -310,14 +259,7 @@
         </div>
     </div>
 </section>
-<!--=====================================
-            EXPERIENCE PART END
-=======================================-->
 
-
-<!--=====================================
-            EDUCATION PART START
-=======================================-->
 <section class="section edu-part cate-active">
     <div class="container">
         <div class="row">
@@ -379,13 +321,7 @@
         </div>
     </div>
 </section>
-<!--=====================================
-            EDUCATION PART END
-=======================================-->
 
-<!--=====================================
-            SERVICE PART START
-=======================================-->
 <section class="section service-part">
     <div class="container">
         <div class="row">
@@ -452,27 +388,32 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="service-btn">
+    </div>
+</section>
+
+<section class="discuss-part">
+    <div class="container">
+        <div class="row discuss-bg">
+            <div class="col-md-7 col-lg-8">
+                <div class="discuss-content">
+                    <h3>{{ __('Discutons de votre projet') }}</h3>
+                    <p>
+                        {{ __('Je suis la pour réaliser vos sites internet et campagnes marketing !') }}
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-5 col-lg-4">
+                <div class="discuss-btn">
                     <a class="btn btn-inline" href="#">
-                        <i class="far fa-eye"></i>
-                        <span>show more</span>
+                        <i class="fas fa-paper-plane"></i>
+                        <span>{{ __('me contacter') }}</span>
                     </a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!--=====================================
-            SERVICE PART END
-=======================================-->
 
-
-
-<!--=====================================
-            SKILLS PART START
-=======================================-->
 <section class="section skills-part">
     <div class="container">
         <div class="row">
@@ -487,7 +428,7 @@
             <div class="col-6 col-sm-4 col-lg-2">
                 <div class="skills-card">
                     <div class="skills-img">
-                        <img src="img/html.png" alt="html">
+                        <img src="{{ asset('img/html.png') }}" alt="html">
                     </div>
                     <div class="skills-name">
                         <p>html</p>
@@ -497,7 +438,7 @@
             <div class="col-6 col-sm-4 col-lg-2">
                 <div class="skills-card">
                     <div class="skills-img">
-                        <img src="img/css.png" alt="css">
+                        <img src="{{ asset('img/css.png') }}" alt="css">
                     </div>
                     <div class="skills-name">
                         <p>css</p>
@@ -507,7 +448,7 @@
             <div class="col-6 col-sm-4 col-lg-2">
                 <div class="skills-card">
                     <div class="skills-img">
-                        <img src="img/javascript.png" alt="javascript">
+                        <img src="{{ asset('img/javascript.png') }}" alt="javascript">
                     </div>
                     <div class="skills-name">
                         <p>javascript</p>
@@ -517,7 +458,7 @@
             <div class="col-6 col-sm-4 col-lg-2">
                 <div class="skills-card">
                     <div class="skills-img">
-                        <img src="img/bootstrap.png" alt="bootstrap">
+                        <img src="{{ asset('img/bootstrap.png') }}" alt="bootstrap">
                     </div>
                     <div class="skills-name">
                         <p>bootstrap</p>
@@ -527,7 +468,7 @@
             <div class="col-6 col-sm-4 col-lg-2">
                 <div class="skills-card">
                     <div class="skills-img">
-                        <img src="img/jquery.png" alt="jquery">
+                        <img src="{{ asset('img/jquery.png') }}" alt="jquery">
                     </div>
                     <div class="skills-name">
                         <p>jquery</p>
@@ -537,7 +478,7 @@
             <div class="col-6 col-sm-4 col-lg-2">
                 <div class="skills-card">
                     <div class="skills-img">
-                        <img src="img/sass.png" alt="sass">
+                        <img src="{{ asset('img/sass.png') }}" alt="sass">
                     </div>
                     <div class="skills-name">
                         <p>sass</p>
@@ -547,7 +488,7 @@
             <div class="col-6 col-sm-4 col-lg-2">
                 <div class="skills-card">
                     <div class="skills-img">
-                        <img src="img/wordpress.png" alt="wordpress">
+                        <img src="{{ asset('img/wordpress.png') }}" alt="wordpress">
                     </div>
                     <div class="skills-name">
                         <p>wordpress</p>
@@ -557,37 +498,37 @@
             <div class="col-6 col-sm-4 col-lg-2">
                 <div class="skills-card">
                     <div class="skills-img">
-                        <img src="img/react.png" alt="react">
+                        <img src="{{ asset('img/laravel.png') }}" alt="laravel">
                     </div>
                     <div class="skills-name">
-                        <p>react</p>
+                        <p>laravel</p>
                     </div>
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-lg-2">
                 <div class="skills-card">
                     <div class="skills-img">
-                        <img src="img/github.png" alt="github">
+                        <img src="{{ asset('img/symfony.png') }}" alt="symfony">
                     </div>
                     <div class="skills-name">
-                        <p>github</p>
+                        <p>symfony</p>
                     </div>
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-lg-2">
                 <div class="skills-card">
                     <div class="skills-img">
-                        <img src="img/vscode.png" alt="vscode">
+                        <img src="{{ asset('img/prestashop.png') }}" alt="prestashop">
                     </div>
                     <div class="skills-name">
-                        <p>vscode</p>
+                        <p>prestashop</p>
                     </div>
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-lg-2">
                 <div class="skills-card">
                     <div class="skills-img">
-                        <img src="img/photoshop.png" alt="photoshop">
+                        <img src="{{ asset('img/photoshop.png') }}" alt="photoshop">
                     </div>
                     <div class="skills-name">
                         <p>photoshop</p>
@@ -597,7 +538,7 @@
             <div class="col-6 col-sm-4 col-lg-2">
                 <div class="skills-card">
                     <div class="skills-img">
-                        <img src="img/illustrator.png" alt="illustrator">
+                        <img src="{{ asset('img/illustrator.png') }}" alt="illustrator">
                     </div>
                     <div class="skills-name">
                         <p>illustrator</p>
@@ -607,47 +548,13 @@
         </div>
     </div>
 </section>
-<!--=====================================
-            SKILLS PART END
-=======================================-->
 
-
-<!--=====================================
-            DISCUSS PART START
-=======================================-->
-<section class="discuss-part">
-    <div class="container">
-        <div class="row discuss-bg">
-            <div class="col-md-7 col-lg-8">
-                <div class="discuss-content">
-                    <h3>Let’s discuss your idea</h3>
-                    <p>Have a thought about your future website? I am always here.</p>
-                </div>
-            </div>
-            <div class="col-md-5 col-lg-4">
-                <div class="discuss-btn">
-                    <a class="btn btn-inline" href="#">
-                        <i class="fas fa-paper-plane"></i>
-                        <span>Get in Touch</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--=====================================
-            DISCUSS PART END
-=======================================-->
-
-<!--=====================================
-            TESTIMONIAL PART START
-=======================================-->
 <section class="section testi-part">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-heading">
-                    <p>clients <span>qoute</span></p>
+                    <p>{{ __('les') }} <span>{{ __('témoignages') }}</span></p>
                     <h2>Received fantastic feedback from the clients</h2>
                 </div>
             </div>
@@ -663,7 +570,7 @@
                         <div class="testi-meta">
                             <h5>austin houston</h5>
                             <p>new york, usa</p>
-                            <a href="#"><img src="img/testi-1.jpg" alt="testi-1"></a>
+                            <a href="#"><img src="{{ asset('img/testi-1.jpg') }}" alt="testi-1"></a>
                         </div>
                     </div>
                     <div class="testi-card">
@@ -674,7 +581,7 @@
                         <div class="testi-meta">
                             <h5>devid whigtmore</h5>
                             <p>rome, Italy</p>
-                            <a href="#"><img src="img/testi-2.jpg" alt="testi-2"></a>
+                            <a href="#"><img src="{{ asset('img/testi-2.jpg') }}" alt="testi-2"></a>
                         </div>
                     </div>
                     <div class="testi-card">
@@ -685,7 +592,7 @@
                         <div class="testi-meta">
                             <h5>sane galonhop</h5>
                             <p>dubai, uae</p>
-                            <a href="#"><img src="img/testi-3.jpg" alt="testi-3"></a>
+                            <a href="#"><img src="{{ asset('img/testi-3.jpg') }}" alt="testi-3"></a>
                         </div>
                     </div>
                     <div class="testi-card">
@@ -696,184 +603,15 @@
                         <div class="testi-meta">
                             <h5>martin howelling</h5>
                             <p>toronto, canada</p>
-                            <a href="#"><img src="img/testi-4.jpg" alt="testi-4"></a>
+                            <a href="#"><img src="{{ asset('img/testi-4.jpg') }}" alt="testi-4"></a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="testi-btn">
-                    <a class="btn btn-inline" href="#">
-                        <i class="fas fa-tint"></i>
-                        <span>drop your quote</span>
-                    </a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!--=====================================
-            TESTIMONIAL PART END
-=======================================-->
 
-
-<!--=====================================
-            BLOG PART START
-=======================================-->
-<section class="section blog-part">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-heading">
-                    <p>my <span>blogs</span></p>
-                    <h2>Some article about my activity &amp; experience</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-lg-4">
-                <div class="blog-card">
-                    <div class="blog-img">
-                        <img src="img/blog-1.jpg" alt="blog-1">
-                        <div class="blog-oly">
-                            <p>html, css</p>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <ul class="blog-meta">
-                            <li>
-                                <i class="flaticon-calendar"></i>
-                                <p>02 feb 2020</p>
-                            </li>
-                            <li>
-                                <i class="flaticon-share"></i>
-                                <p>5 share</p>
-                            </li>
-                        </ul>
-                        <div class="blog-text">
-                            <h4><a href="#">Business contents insurance iure ipsam ratione is a type of business...</a></h4>
-                        </div>
-                        <ul class="blog-link">
-                            <li>
-                                <a class="btn btn-inline" href="#">read more</a>
-                            </li>
-                            <li>
-                                <i class="flaticon-chat"></i>
-                                <p>13 comments</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="blog-card">
-                    <div class="blog-img">
-                        <img src="img/blog-2.jpg" alt="blog-2">
-                        <div class="blog-oly">
-                            <p>javascript</p>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <ul class="blog-meta">
-                            <li>
-                                <i class="flaticon-calendar"></i>
-                                <p>02 feb 2020</p>
-                            </li>
-                            <li>
-                                <i class="flaticon-share"></i>
-                                <p>5 share</p>
-                            </li>
-                        </ul>
-                        <div class="blog-text">
-                            <h4><a href="#">Business contents insurance iure ipsam ratione is a type of business...</a></h4>
-                        </div>
-                        <ul class="blog-link">
-                            <li>
-                                <a class="btn btn-inline" href="#">read more</a>
-                            </li>
-                            <li>
-                                <i class="flaticon-chat"></i>
-                                <p>13 comments</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 col-lg-4">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="blog-suggest">
-                            <div class="suggest-img">
-                                <a href="#"><img src="img/suggest-1.jpg" alt="suggest-1"></a>
-                            </div>
-                            <div class="suggest-content">
-                                <div class="suggest-title">
-                                    <h6><a href="#">Business contents insurance is a type of business.</a></h6>
-                                </div>
-                                <div class="suggest-date">
-                                    <i class="flaticon-calendar"></i>
-                                    <p>02 feb 2020</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="blog-suggest">
-                            <div class="suggest-img">
-                                <a href="#"><img src="img/suggest-2.jpg" alt="suggest-2"></a>
-                            </div>
-                            <div class="suggest-content">
-                                <div class="suggest-title">
-                                    <h6><a href="#">Business contents insurance is a type of business.</a></h6>
-                                </div>
-                                <div class="suggest-date">
-                                    <i class="flaticon-calendar"></i>
-                                    <p>02 feb 2020</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="blog-suggest">
-                            <div class="suggest-img">
-                                <a href="#"><img src="img/suggest-3.jpg" alt="suggest-3"></a>
-                            </div>
-                            <div class="suggest-content">
-                                <div class="suggest-title">
-                                    <h6><a href="#">Business contents insurance is a type of business.</a></h6>
-                                </div>
-                                <div class="suggest-date">
-                                    <i class="flaticon-calendar"></i>
-                                    <p>02 feb 2020</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="blog-btn">
-                    <a class="btn btn-inline" href="#">
-                        <i class="far fa-eye"></i>
-                        <span>show more</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--=====================================
-            BLOG PART END
-=======================================-->
-
-
-<!--=====================================
-            CONTACT PART START
-=======================================-->
 <section class="section contact-part">
     <div class="container">
         <div class="row">
@@ -967,14 +705,7 @@
         </div>
     </div>
 </section>
-<!--=====================================
-            CONTACT PART END
-=======================================-->
 
-
-<!--=====================================
-            FOOTER PART START
-=======================================-->
 <section class="section footer-part">
     <div class="container">
         <div class="row">
