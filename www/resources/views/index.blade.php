@@ -15,7 +15,7 @@
             <button class="navbar-toggle" type="button"><i class="fas fa-bars"></i></button>
 
             <div class="navbar-slide">
-                <a class="navbar-cross" href="#"><i class="fas fa-times"></i></a>
+                <a class="navbar-cross" href="javascript:void(0)"><i class="fas fa-times"></i></a>
 
                 <ul class="navbar-list">
                     <li class="navbar-item">
@@ -338,7 +338,7 @@
                     <h3>01</h3>
                     <span class="flaticon-computer"></span>
                     <i class="flaticon-computer"></i>
-                    <h4>Intégration web</h4>
+                    <h4>Refonte web</h4>
                     <p>I have got much experience working with front-end coding HTML, CSS, SASS, JAVASCRIPT, BOOTSTRAP, JQUERY.</p>
                 </div>
             </div>
