@@ -9,7 +9,7 @@
 <nav class="navbar-part">
     <div class="container">
         <div class="navbar-content">
-            <a class="navbar-logo" href="#">
+            <a class="navbar-logo" href="{{ route('home') }}">
                 <img src="{{asset('img/logo.png') }}" alt="logo">
             </a>
             <button class="navbar-toggle" type="button"><i class="fas fa-bars"></i></button>
@@ -18,25 +18,25 @@
                 <a class="navbar-cross" href="#"><i class="fas fa-times"></i></a>
 
                 <ul class="navbar-list">
-                    <li class="navbar-item active">
-                        <a class="navbar-link" href="#">{{ __('Accueil') }}</a>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#summary">{{ __('Accueil') }}</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link" href="#">{{ __('Parcours') }}</a>
+                        <a class="navbar-link" href="#resume">{{ __('Parcours') }}</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link" href="#">{{ __('Services') }}</a>
+                        <a class="navbar-link" href="#service">{{ __('Services') }}</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link" href="#">{{ __('Compétences') }}</a>
+                        <a class="navbar-link" href="#skills">{{ __('Compétences') }}</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link" href="#">{{ __('Témoignages') }}</a>
+                        <a class="navbar-link" href="#testimonial">{{ __('Témoignages') }}</a>
                     </li>
                 </ul>
 
                 <div class="navbar-btn">
-                    <a class="btn btn-inline" href="#">
+                    <a class="btn btn-inline" href="#contact">
                         <i class="fas fa-paper-plane"></i>
                         <span>{{ __('me contacter') }}</span>
                     </a>
@@ -46,7 +46,7 @@
     </div>
 </nav>
 
-<section class="banner-part">
+<section id="summary" class="banner-part">
     <div class="banner-bg">
         <div class="container">
             <img class="circle-shape" src="{{ asset('img/circle-shape.png') }}" alt="circle-shape">
@@ -82,7 +82,7 @@
     </div>
 </section>
 
-<section class="section resume-part">
+<section id="resume" class="section resume-part">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -150,7 +150,7 @@
                         <li>
                             <h6>{{ __('Site') }}:</h6>
                             <p>
-                                <a target="_blank" href="{{ url('/') }}">
+                                <a target="_blank" href="{{ route('home') }}">
                                     www.m-scz.fr
                                 </a>
                             </p>
@@ -322,7 +322,7 @@
     </div>
 </section>
 
-<section class="section service-part">
+<section id="service" class="section service-part">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -338,7 +338,7 @@
                     <h3>01</h3>
                     <span class="flaticon-computer"></span>
                     <i class="flaticon-computer"></i>
-                    <h4>website design</h4>
+                    <h4>Intégration web</h4>
                     <p>I have got much experience working with front-end coding HTML, CSS, SASS, JAVASCRIPT, BOOTSTRAP, JQUERY.</p>
                 </div>
             </div>
@@ -347,43 +347,43 @@
                     <h3>02</h3>
                     <span class="flaticon-wordpress"></span>
                     <i class="flaticon-wordpress"></i>
-                    <h4>wordpress customize</h4>
+                    <h4>Site vitirne</h4>
                     <p>Also have dynamic website development experience with wordpress based solutions, wordpress plugins.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
                 <div class="service-card">
                     <h3>03</h3>
-                    <span class="flaticon-online-ads"></span>
-                    <i class="flaticon-online-ads"></i>
-                    <h4>web banner</h4>
+                    <span class="flaticon-shopping-cart"></span>
+                    <i class="flaticon-shopping-cart"></i>
+                    <h4>Site E-commerce</h4>
                     <p>I have helped a lot of companies and startups designing their advertising campaigns and modern websites.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
                 <div class="service-card">
                     <h3>04</h3>
-                    <span class="flaticon-mail"></span>
-                    <i class="flaticon-mail"></i>
-                    <h4>email signature</h4>
+                    <span class="flaticon-tools-and-utensils"></span>
+                    <i class="flaticon-tools-and-utensils"></i>
+                    <h4>Application web</h4>
                     <p>I am expert to code HTML email signature for you that can be used in Gmail, Yahoo, Outlook, Mac Mail, Hotmail etc.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
                 <div class="service-card service-ghape">
                     <h3>05</h3>
-                    <span class="flaticon-responsive-design"></span>
-                    <i class="flaticon-responsive-design"></i>
-                    <h4>responsive design</h4>
+                    <span class="flaticon-online-ads"></span>
+                    <i class="flaticon-online-ads"></i>
+                    <h4>Marketing digital</h4>
                     <p>I will do responsive website design and build complete website by CSS FLEXBOX, GRID, BOOTSTRAP etc.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
                 <div class="service-card">
                     <h3>06</h3>
-                    <span class="flaticon-tools-and-utensils"></span>
-                    <i class="flaticon-tools-and-utensils"></i>
-                    <h4>sass coding</h4>
+                    <span class="flaticon-project-management"></span>
+                    <i class="flaticon-project-management"></i>
+                    <h4>Projet sur-mesure</h4>
                     <p>SASS is a CSS pre-processor that lets use variables, mixins, loops, functions, imports, and other interesting functionalities .</p>
                 </div>
             </div>
@@ -414,7 +414,7 @@
     </div>
 </section>
 
-<section class="section skills-part">
+<section id="skills" class="section skills-part">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -498,6 +498,16 @@
             <div class="col-6 col-sm-4 col-lg-2">
                 <div class="skills-card">
                     <div class="skills-img">
+                        <img src="{{ asset('img/prestashop.png') }}" alt="prestashop">
+                    </div>
+                    <div class="skills-name">
+                        <p>prestashop</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+                <div class="skills-card">
+                    <div class="skills-img">
                         <img src="{{ asset('img/laravel.png') }}" alt="laravel">
                     </div>
                     <div class="skills-name">
@@ -512,16 +522,6 @@
                     </div>
                     <div class="skills-name">
                         <p>symfony</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2">
-                <div class="skills-card">
-                    <div class="skills-img">
-                        <img src="{{ asset('img/prestashop.png') }}" alt="prestashop">
-                    </div>
-                    <div class="skills-name">
-                        <p>prestashop</p>
                     </div>
                 </div>
             </div>
@@ -549,7 +549,7 @@
     </div>
 </section>
 
-<section class="section testi-part">
+<section id="testimonial" class="section testi-part">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -612,7 +612,7 @@
     </div>
 </section>
 
-<section class="section contact-part">
+<section id="contact" class="section contact-part">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -659,31 +659,41 @@
         </div>
         <div class="row">
             <div class="col-md-6 col-lg-8">
-                <form>
+                <form method="POST" action="{{ route('message.send') }}">
+                    @csrf
+                    @if(session()->has('success'))
+                        <div class="alert alert-success">
+                            {{ session()->get('success') }}
+                        </div>
+                    @endif
+
+                    @if ($errors->any())
+                        @foreach ($errors->all() as $error)
+                            <div class="alert alert-danger">
+                                {{ $error }}
+                            </div>
+                        @endforeach 
+                    @endif
+
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="{{ __('Nom') }}">
+                                <input value="{{ old('name') }}" required type="text" name="name" class="form-control" placeholder="{{ __('Nom') }}">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="{{ __('Objet') }}">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input type="file" class="form-control">
+                                <input value="{{ old('email') }}" required type="email" name="email" class="form-control" placeholder="Email">
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="form-group">
-                                <textarea class="form-control" placeholder="Message"></textarea>
+                                <input value="{{ old('subject') }}" required type="text" name="subject" class="form-control" placeholder="{{ __('Objet') }}">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <textarea required class="form-control" name="message" placeholder="Message">{{ old('message') }}</textarea>
                             </div>
                         </div>
                         <div class="col-lg-12">
@@ -723,7 +733,7 @@
                 <ul class="footer-text">
                     <li><h6>&copy; Copyright - <span>{{ now()->year }}</span></h6></li>
                     <li><h6>{{ __('Tous droits réservés') }}</h6></li>
-                    <li><h6>{{ __('Fait avec ❤ par') }} - <a target="_blank" href="{{ url('/') }}">Maxime Sieczkowski</a></h6></li>
+                    <li><h6>{{ __('Fait avec ❤ par') }} - <a target="_blank" href="{{ route('home') }}">Maxime Sieczkowski</a></h6></li>
                 </ul>
             </div>
         </div>

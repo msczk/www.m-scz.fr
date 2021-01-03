@@ -99,7 +99,10 @@ $(".page-link").on("click", function(){
     $(this).addClass("active");
 });
   
-
+$('li.navbar-item').on('click', function(){
+    $('li.navbar-item').removeClass('active');
+    $(this).addClass('active');
+});
 
 
 
