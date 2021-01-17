@@ -631,7 +631,7 @@
                     </div>
                     <div class="address-text">
                         <h4>email</h4>
-                        <p>maxime43200@gmail.com</p>
+                        <p>hello@m-scz.fr</p>
                     </div>
                 </div>
             </div>
