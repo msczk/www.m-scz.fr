@@ -173,7 +173,7 @@
                         <i class="fas fa-download"></i>
                         <span>{{ __('téléchargez CV') }}</span> --}}
                     </a>
-                    <a class="btn btn-inline" href="#">
+                    <a class="btn btn-inline" href="#contact">
                         <i class="fas fa-paper-plane"></i>
                         <span>{{ __('contactez moi') }}</span>
                     </a>
