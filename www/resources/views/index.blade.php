@@ -415,7 +415,7 @@
             </div>
             <div class="col-md-5 col-lg-4">
                 <div class="discuss-btn">
-                    <a class="btn btn-inline" href="#">
+                    <a class="btn btn-inline" href="#contact">
                         <i class="fas fa-file-invoice"></i>
                         <span>{{ __('Devis gratuit') }}</span>
                     </a>
