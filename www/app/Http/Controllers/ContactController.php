@@ -18,7 +18,7 @@ class ContactController extends Controller
 		$message = $request->input('message');
 
 		$user = new User;
-		$user->email = $email;
+		$user->email = 'hello@m-scz.fr';
 		$user->notify(new contactMessage($email, $name, $subject, $message));
 		return redirect(route('home').'#contact')->with('success', __('Votre message a bien été envoyé !'));
 	}
