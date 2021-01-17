@@ -1,5 +1,9 @@
 @extends('layout.layout')
 
+@section('title')
+<title>Maxime Sieczkowski - {{ __('Développeur Web Full Stack') }}</title>
+@endsection
+
 @section('content')
 
 <a class="back2top-btn" href="#">
@@ -31,7 +35,9 @@
                         <a class="navbar-link" href="#skills">{{ __('Compétences') }}</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link" href="#testimonial">{{ __('Témoignages') }}</a>
+                        <a class="navbar-link" href="#structure">
+                            {{ __('Structure projet') }}
+                        </a>
                     </li>
                 </ul>
 
@@ -54,7 +60,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <div class="banner-img">
-                        <img src="{{ asset('img/banner-hero.png') }}" alt="banner-hero">
+                        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_sSF6EG.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay></lottie-player>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
@@ -62,15 +68,20 @@
                         <div class="banner-text">
                             <span>Maxime Sieczkowski</span>
                             <h1>{{ __('Développeur Web Full Stack') }}</h1>
-                            <p>Helping design your business and personal website build with your demand by html and
-                                wordpress. Click the demo work button, you can see my previous project.</p>
+                            <p>
+                                Passionné par le web et le monde du digital depuis 5 ans, je conçois et réalise vos sites vitrines ou e-commerce ainsi que vos campagnes marketing.
+                            </p>
+                            <br>
+                            <p>
+                                En 2021, être présent sur internet est incontournable : faites donc appel à mes services !
+                            </p>
                         </div>
                         <div class="banner-btn duel-btn">
-                            <a class="btn btn-inline" href="#">
+                            <a class="btn btn-inline" href="#resume">
                                 <i class="fas fa-arrows-alt"></i>
                                 <span>{{ __('En savoir plus') }}</span>
                             </a>
-                            <a class="btn btn-inline" href="#">
+                            <a class="btn btn-inline" href="#contact">
                                 <i class="fas fa-paper-plane"></i>
                                 <span>{{ __('Me contacter') }}</span>
                             </a>
@@ -125,7 +136,7 @@
             <div class="col-lg-7">
                 <div class="about-summery">
                     <h3>{{ __('Je suis') }} <span>Maxime Sieczkowski</span></h3>
-                    <p>I’m with broad technical skill-set, very strong attention to detail, and 3 years of experience in front-end web development. Able to multitask and juggle multiple pressing projects simultaneously. On top of the latest trends and technologies. Ability to improvise, troubleshoot, take ownership, and most importantly learn new skills on the job.</p>
+                    <p>Développeur Web Full Stack depuis 3 ans et passionné de marketing, je suis à votre disposition pour réaliser vos projets de création de sites internet vitrine, e-commerce, de développement spécifique ou d’applications web. Je travaille avec les dernières technologies du web pour vous proposer des réalisations modernes, multi-support (mobile, tablette, ordinateur) et adaptées à vos besoins.</p>
                 </div>
                 <div class="about-list">
                     <ul>
@@ -158,9 +169,9 @@
                     </ul>
                 </div>
                 <div class="about-btn duel-btn">
-                    <a class="btn btn-inline" href="#" download>
+                    {{--<a class="btn btn-inline" href="#" download>
                         <i class="fas fa-download"></i>
-                        <span>{{ __('téléchargez CV') }}</span>
+                        <span>{{ __('téléchargez CV') }}</span> --}}
                     </a>
                     <a class="btn btn-inline" href="#">
                         <i class="fas fa-paper-plane"></i>
@@ -273,7 +284,7 @@
                         </li>
                         <li>
                             <h5>
-                                License Professionneelle METINET
+                                Licence Professionnelle METINET
                             </h5>
                             <h6>
                                 IUT Lyon 1, Bourg-En-Bresse (01)
@@ -309,7 +320,7 @@
                         </li>
                         <li>
                             <h5>
-                                Baccalauréat Scientifique Option SVT
+                                Baccalauréat Scientifique
                             </h5>
                             <h6>
                                 Lycée Emmanuel Chabrier, Yssingeaux (43)
@@ -328,7 +339,7 @@
             <div class="col-lg-12">
                 <div class="section-heading">
                     <p>{{ __('mes') }} <span>{{ __('services') }}</span></p>
-                    <h2>I'm very passionate under about this services</h2>
+                    <h2>{{ __('La solution sur mesure à votre projet') }}</h2>
                 </div>
             </div>
         </div>
@@ -339,7 +350,7 @@
                     <span class="flaticon-computer"></span>
                     <i class="flaticon-computer"></i>
                     <h4>Refonte web</h4>
-                    <p>I have got much experience working with front-end coding HTML, CSS, SASS, JAVASCRIPT, BOOTSTRAP, JQUERY.</p>
+                    <p>{{ __('Faites une mise à jour visuelle sur votre site ou réalisez une nouvelle charte graphique') }}</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
@@ -348,7 +359,7 @@
                     <span class="flaticon-wordpress"></span>
                     <i class="flaticon-wordpress"></i>
                     <h4>Site vitirne</h4>
-                    <p>Also have dynamic website development experience with wordpress based solutions, wordpress plugins.</p>
+                    <p>{{ __('Présentez votre activité professionnelle sur un site moderne et complet') }}</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
@@ -357,7 +368,7 @@
                     <span class="flaticon-shopping-cart"></span>
                     <i class="flaticon-shopping-cart"></i>
                     <h4>Site E-commerce</h4>
-                    <p>I have helped a lot of companies and startups designing their advertising campaigns and modern websites.</p>
+                    <p>{{ __('Vendez sur internet en toute sécurité et faites grossir votre boutique') }}</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
@@ -366,7 +377,7 @@
                     <span class="flaticon-tools-and-utensils"></span>
                     <i class="flaticon-tools-and-utensils"></i>
                     <h4>Application web</h4>
-                    <p>I am expert to code HTML email signature for you that can be used in Gmail, Yahoo, Outlook, Mac Mail, Hotmail etc.</p>
+                    <p>{{ __('CRM, Marketplace, Application mobile, donnez vie à votre projet') }}</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
@@ -375,16 +386,16 @@
                     <span class="flaticon-online-ads"></span>
                     <i class="flaticon-online-ads"></i>
                     <h4>Marketing digital</h4>
-                    <p>I will do responsive website design and build complete website by CSS FLEXBOX, GRID, BOOTSTRAP etc.</p>
+                    <p>{{ __('Réalisez des campagnes marketing sur Facebook, Instagram ou Google pour promouvoir votre marque') }}</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
                 <div class="service-card">
                     <h3>06</h3>
-                    <span class="flaticon-project-management"></span>
-                    <i class="flaticon-project-management"></i>
-                    <h4>Projet sur-mesure</h4>
-                    <p>SASS is a CSS pre-processor that lets use variables, mixins, loops, functions, imports, and other interesting functionalities .</p>
+                    <span class="flaticon-graduation-cap"></span>
+                    <i class="flaticon-graduation-cap"></i>
+                    <h4>Coaching & Audit</h4>
+                    <p>{{ __('Préparez votre transition digitale avec un expert') }}</p>
                 </div>
             </div>
         </div>
@@ -405,8 +416,8 @@
             <div class="col-md-5 col-lg-4">
                 <div class="discuss-btn">
                     <a class="btn btn-inline" href="#">
-                        <i class="fas fa-paper-plane"></i>
-                        <span>{{ __('me contacter') }}</span>
+                        <i class="fas fa-file-invoice"></i>
+                        <span>{{ __('Devis gratuit') }}</span>
                     </a>
                 </div>
             </div>
@@ -420,7 +431,7 @@
             <div class="col-lg-12">
                 <div class="section-heading">
                     <p>{{ __('mes') }} <span>{{ __('compétences') }}</span></p>
-                    <h2>Expert in this technical web software</h2>
+                    <h2>{{ __('J\'ai ce qu\'il vous faut') }}</h2>
                 </div>
             </div>
         </div>
@@ -549,64 +560,43 @@
     </div>
 </section>
 
-<section id="testimonial" class="section testi-part">
+<section id="structure" class="section coding-part">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-heading">
-                    <p>{{ __('les') }} <span>{{ __('témoignages') }}</span></p>
-                    <h2>Received fantastic feedback from the clients</h2>
+                    <p>{{ __('structure d\'un') }} <span>{{ __('projet') }}</span></p>
+                    <h2>{{ __('Comment je fonctionne') }}</h2>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12">
-                <div class="testi-slider">
-                    <div class="testi-card">
-                        <i class="flaticon-favorites"></i>
-                        <div class="testi-quote">
-                            <p>Oustanding design and collaboration. I'm satisfied work with him.</p>
-                        </div>
-                        <div class="testi-meta">
-                            <h5>austin houston</h5>
-                            <p>new york, usa</p>
-                            <a href="#"><img src="{{ asset('img/testi-1.jpg') }}" alt="testi-1"></a>
-                        </div>
-                    </div>
-                    <div class="testi-card">
-                        <i class="flaticon-favorites"></i>
-                        <div class="testi-quote">
-                            <p>Oustanding design and collaboration. I'm satisfied work with him.</p>
-                        </div>
-                        <div class="testi-meta">
-                            <h5>devid whigtmore</h5>
-                            <p>rome, Italy</p>
-                            <a href="#"><img src="{{ asset('img/testi-2.jpg') }}" alt="testi-2"></a>
-                        </div>
-                    </div>
-                    <div class="testi-card">
-                        <i class="flaticon-favorites"></i>
-                        <div class="testi-quote">
-                            <p>Oustanding design and collaboration. I'm satisfied work with him.</p>
-                        </div>
-                        <div class="testi-meta">
-                            <h5>sane galonhop</h5>
-                            <p>dubai, uae</p>
-                            <a href="#"><img src="{{ asset('img/testi-3.jpg') }}" alt="testi-3"></a>
-                        </div>
-                    </div>
-                    <div class="testi-card">
-                        <i class="flaticon-favorites"></i>
-                        <div class="testi-quote">
-                            <p>Oustanding design and collaboration. I'm satisfied work with him.</p>
-                        </div>
-                        <div class="testi-meta">
-                            <h5>martin howelling</h5>
-                            <p>toronto, canada</p>
-                            <a href="#"><img src="{{ asset('img/testi-4.jpg') }}" alt="testi-4"></a>
-                        </div>
-                    </div>
+            <div class="col-lg-6">
+                <div class="coding-content">
+                    <h3>Collaborer sur un projet n'a jamais été aussi <span>simple</span></h3>
+                    <p>Le processus de création d'une solution se déroule en 4 étapes :</p>
                 </div>
+                <ul class="coding-list">
+                    <li>
+                        <span class="coding-round"></span>
+                        <p>Réunion et cahier des charges</p>
+                    </li>
+                    <li>
+                        <span class="coding-round"></span>
+                        <p>Phase de développement</p>
+                    </li>
+                    <li>
+                        <span class="coding-round"></span>
+                        <p>Présentation et mise en place des retours</p>
+                    </li>
+                    <li>
+                        <span class="coding-round"></span>
+                        <p>Livraison du projet</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_0tue65cn.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay></lottie-player>
             </div>
         </div>
     </div>
@@ -651,7 +641,7 @@
                         <i class="flaticon-pin"></i>
                     </div>
                     <div class="address-text">
-                        <h4>{{ __('Ville') }}</h4>
+                        <h4>{{ __('Localisation') }}</h4>
                         <p>Yssingeaux (43), France</p>
                     </div>
                 </div>

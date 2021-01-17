@@ -14,16 +14,16 @@
         
 
         <!-- TEMPLATE META -->
-        <meta name="name" content="Portlab">
+        <meta name="name" content="Maxime Sieczkowski - Développeur Web Full Stack">
         <meta name="type" content="Personal Portfolio">
-        <meta name="title" content="Portlab - Personal Portfolio Bootstrap HTML Template">
-        <meta name="keywords" content="portlab, portfolio, personal, html, template, bootstrap, bussiness, clean, creative, resume, cv, designer, responsive, minimal, freelancer">
+        <meta name="title" content="Maxime Sieczkowski - Développeur Web Full Stack">
+        <meta name="keywords" content="portfolio, html, template, bootstrap, bussiness, cv, designer, responsive, développeur web, freelance">
+        <meta name="description" content="Maxime Sieczkowski - Développeur Web Full Stack. Je conçois et réalise vos sites vitrines ou e-commerce ainsi que vos campagnes marketing.">
         <!--=====================================
                     META-TAG PART END
         =======================================-->
 
-        <!-- FOR WEBPAGE TITLE -->
-        <title>Portlab - Home</title>
+        @yield('title')
 
         <!--=====================================
                     CSS LINK PART START
@@ -72,6 +72,8 @@
 
         <!-- FOR INTERACTION -->
         <script src="{{ asset('js/custom/main.js') }}"></script>
+
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <!--=====================================
                     JS LINK PART END
         =======================================-->
