@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KRW3PHXJXS"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-KRW3PHXJXS');
+        </script>
         <!--=====================================
                     META-TAG PART START
         =======================================-->
