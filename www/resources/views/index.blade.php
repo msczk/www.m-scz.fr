@@ -333,6 +333,29 @@
     </div>
 </section>
 
+<section class="discuss-part">
+    <div class="container">
+        <div class="row discuss-bg">
+            <div class="col-lg-8">
+                <div class="discuss-content">
+                    <h3>{{ __('Discutons de votre projet') }}</h3>
+                    <p>
+                        {{ __('Je suis la pour réaliser vos sites internet et campagnes marketing !') }}
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="discuss-btn">
+                    <a class="btn btn-inline" href="#contact">
+                        <i class="fas fa-file-invoice"></i>
+                        <span>{{ __('Devis gratuit') }}</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="service" class="section service-part">
     <div class="container">
         <div class="row">
@@ -396,29 +419,6 @@
                     <i class="flaticon-graduation-cap"></i>
                     <h4>Coaching & Audit</h4>
                     <p>{{ __('Préparez votre transition digitale avec un expert') }}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="discuss-part">
-    <div class="container">
-        <div class="row discuss-bg">
-            <div class="col-md-7 col-lg-8">
-                <div class="discuss-content">
-                    <h3>{{ __('Discutons de votre projet') }}</h3>
-                    <p>
-                        {{ __('Je suis la pour réaliser vos sites internet et campagnes marketing !') }}
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-5 col-lg-4">
-                <div class="discuss-btn">
-                    <a class="btn btn-inline" href="#contact">
-                        <i class="fas fa-file-invoice"></i>
-                        <span>{{ __('Devis gratuit') }}</span>
-                    </a>
                 </div>
             </div>
         </div>
