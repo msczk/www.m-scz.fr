@@ -294,7 +294,27 @@ h6 {
   margin-left: 2px;
 }
 
+@media (max-width: 1200px)
+{
+  .discuss-part{
+    margin: 60px 0 !important;
+  }
+}
+
 @media (max-width: 991px) {
+
+  .discuss-btn{
+    text-align: center !important;
+  }
+
+  .discuss-btn a.btn{
+    width: 100%;
+  }
+  
+  #newsletter-submit{
+    width: 100%
+  }
+
   .navbar-dropdown {
     position: inherit;
   }
@@ -390,9 +410,26 @@ h6 {
   margin-right: 15px;
 }
 
-.duel-btn .btn:nth-child(1) {
+.duel-btn .btn:nth-child(1),{
   background: var(--heading);
   border-color: var(--heading);
+}
+
+
+.btn-purple {
+  color: var(--white);
+  background: var(--heading);
+  border-color: var(--heading);
+}
+
+.btn-purple:hover {
+  color: var(--white);
+  background: var(--heading);
+  border-color: var(--heading);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0px 25px 60px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 25px 60px 0px rgba(0, 0, 0, 0.1);
 }
 
 .duel-btn .btn:nth-child(2):hover {
@@ -563,7 +600,6 @@ textarea.form-control {
 ======================================*/
 .port-src {
   text-align: center;
-  margin-bottom: 35px;
 }
 
 .port-form {
@@ -585,8 +621,8 @@ textarea.form-control {
 }
 
 .port-form input {
+  letter-spacing: 2px;
   border: none;
-  width: 320px;
   height: 50px;
   padding: 0px 20px;
   background: transparent;
@@ -596,6 +632,7 @@ textarea.form-control {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }
+
 
 @media (max-width: 575px) {
   .port-form {
@@ -836,6 +873,10 @@ textarea.form-control {
 }
 
 @media (max-width: 991px) {
+  .duel-btn .btn {
+    margin: 8px 0px;
+  }
+
   .navbar-part {
     padding: 10px 15px;
   }

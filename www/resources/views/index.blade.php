@@ -560,6 +560,53 @@
     </div>
 </section>
 
+<section id="newsletter" class="discuss-part">
+    <div class="container">
+        <div class="row discuss-bg">
+            <div class="col-md-12">
+                <form method="POST" action="{{ route('newsletter.subscribe') }}">
+                    @csrf                   
+                    <div class="row">
+                        <div class="col">
+                            <div class="discuss-content text-center">
+                                <h3>Inscrivez-vous à la newsletter</h3>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="form-group">
+                                <input value="{{ old('email-newsletter') }}" required type="text" name="email-newsletter" class="form-control" placeholder="{{ __('Votre email') }}">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-btn">
+                                <button id="newsletter-submit" class="btn btn-purple" type="submit">
+                                    <i class="fas fa-paper-plane"></i>
+                                    <span>S'abonner</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    @if(session()->has('success-newsletter'))
+                        <div class="alert alert-success">
+                            {{ session()->get('success-newsletter') }}
+                        </div>
+                    @endif
+                    @if ($errors->any())
+                        @foreach ($errors->all() as $error)
+                            <div class="alert alert-danger">
+                                {{ $error }}
+                            </div>
+                        @endforeach 
+                    @endif
+                </form>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="structure" class="section coding-part">
     <div class="container">
         <div class="row">
@@ -651,9 +698,9 @@
             <div class="col-md-6 col-lg-8">
                 <form method="POST" action="{{ route('message.send') }}">
                     @csrf
-                    @if(session()->has('success'))
+                    @if(session()->has('success-contact'))
                         <div class="alert alert-success">
-                            {{ session()->get('success') }}
+                            {{ session()->get('success-contact') }}
                         </div>
                     @endif
 

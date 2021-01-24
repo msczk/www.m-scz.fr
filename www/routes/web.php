@@ -19,3 +19,5 @@ use App\Http\Controllers\ContactController;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::post('/contact', [ContactController::class, 'sendMessage'])->name('message.send');
+
+Route::post('/subscribe', [ContactController::class, 'subscribeNewsletter'])->name('newsletter.subscribe');
